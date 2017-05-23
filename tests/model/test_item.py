@@ -1,10 +1,4 @@
 from model.description import Description
-import pytest
-
-
-@pytest.fixture
-def item(feed):
-    return feed.items[0]
 
 
 def test_item_title(item):
