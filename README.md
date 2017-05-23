@@ -197,3 +197,8 @@ $ docker build . -t desafio
 ```
 $ docker run -ti -v $(pwd):/home --name desafio desafio bash
 ```
+
+### Testes
+```
+$ pytest --cov -W ignore .
+```
