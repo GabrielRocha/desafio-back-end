@@ -7,5 +7,5 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 @pytest.fixture(scope='session', autouse=True)
 def feed():
     ''' Return CrawlerFeed Object with url test'''
-    url = BASE_DIR + "/xmls/feed.xml"
+    url ="file:///{}/xmls/feed.xml".format(BASE_DIR)
     return CrawlerFeed(url)
