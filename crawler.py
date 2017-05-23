@@ -17,5 +17,5 @@ class CrawlerFeed():
         return [change_single_to_double_quotes('"item": {}'.format(item.parse()))
                 for item in self.items]
 
-    def build_json(self):
-        return '{{"feed":[ {} ]}}'.format(",".join(self.describe_items()).replace("'", '"'))
+    def __repr__(self):
+        return self.url

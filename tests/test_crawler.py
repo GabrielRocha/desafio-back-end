@@ -11,6 +11,9 @@ def test_root_tag(feed):
 def test_total_items(feed):
     assert len(feed.items) == 12
 
+def test_feed_repr(feed):
+    assert feed.__repr__() == "file:////home/tests/xmls/feed.xml"
+
 @pytest.mark.skip(reason="Tem que definir o objeto description")
 @pytest.mark.parametrize("item", open(BASE_DIR+"/items", "r").readlines())
 def test_parse_items(feed, item):
