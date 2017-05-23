@@ -1,2 +1,4 @@
 lxml
 pytest
+bs4
+pytest-cov
