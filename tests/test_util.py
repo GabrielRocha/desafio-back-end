@@ -38,13 +38,13 @@ def test_parse_div(html):
     assert parse[0]['type'] == "links"
     assert parse[0]['content'] == ["http://null"]
     assert parse[1]['type'] == "image"
-    assert parse[1]['content'] == "http://s2.glbimg.com/fiat-argo.jpg"
+    assert parse[1]['content'] == "http://s2.glbimg.com/fiat.jpg"
 
 
 def test_parse_tag(html):
-    result = [{"type":"text", "content":"Texto de exemplo"},
-              {"type":"links", "content":["http://null"]},
-              {"type":"image", "content":"http://s2.glbimg.com/fiat-argo.jpg"}]
+    result = [{"type": "text", "content": "Texto de exemplo"},
+              {"type": "links", "content": ["http://null"]},
+              {"type": "image", "content": "http://s2.glbimg.com/fiat.jpg"}]
     assert util.parse_tag(html) == result
 
 

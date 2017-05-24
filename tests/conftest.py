@@ -24,6 +24,6 @@ def item(feed):
 def html():
     _html = "<p>\nTexto de exemplo\n\t\n</p>" \
            "<div><ul><li><a href='http://null'>1</a></li></ul>" \
-           "<img id='221890' src='http://s2.glbimg.com/fiat-argo.jpg'/>" \
+           "<img id='221890' src='http://s2.glbimg.com/fiat.jpg'/>" \
            "</div>"
     return BeautifulSoup(_html, "html.parser")
