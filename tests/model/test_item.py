@@ -2,13 +2,11 @@ from model.description import Description
 
 
 def test_item_title(item):
-    assert item.title == "Fiat Argo é flagrado completamente sem camuflagem"
+    assert item.title == "TITLE"
 
 
 def test_item_link(item):
-    link = "http://revistaautoesporte.globo.com/Noticias/" \
-           "noticia/2017/05/fiat-argo-e-" \
-           "flagrado-completamente-sem-camuflagem.html"
+    link = "LINK_FEED.html"
     assert item.link == link
 
 
@@ -17,5 +15,4 @@ def test_item_description(item):
 
 
 def test_item_repr(item):
-    title = "Fiat Argo é flagrado completamente sem camuflagem"
-    assert item.__repr__() == title
+    assert item.__repr__() == "TITLE"
