@@ -194,11 +194,16 @@ $ docker build . -t desafio
 ```
 
 ### Execução do ambiente
-```
+```shell
 $ docker run -ti -v $(pwd):/home --name desafio desafio bash
 ```
 
 ### Testes
-```
+```shell
 $ pytest --cov -W ignore .
+```
+
+### Estilo de Código
+```shell
+$ flake8 --max-complexity=5 .
 ```
