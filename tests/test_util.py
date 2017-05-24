@@ -52,5 +52,6 @@ def test_tags_img_method():
 def test_tags_ul_method():
     assert util.TAGS['ul'] == util.parse_ul
 
+
 def test_tags_div_method():
     assert util.TAGS['div'] == util.parse_div

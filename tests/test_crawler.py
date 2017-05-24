@@ -9,7 +9,7 @@ def test_root_tag(feed):
 
 
 def test_feed_is_xml(feed):
-    assert feed.feed.is_xml == True
+    assert feed.feed.is_xml
 
 
 def test_total_items(feed):
