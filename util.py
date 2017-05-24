@@ -5,10 +5,11 @@ def convert_to_double_quotes(string):
 def flatten_list(list_with_list):
     _list = []
     for element in list_with_list:
-        if type(element) == list:
-            _list += element
-        else:
-            _list.append(element)
+        if element is not None:
+            if type(element) == list:
+                _list += flatten_list(element)
+            else:
+                _list.append(element)
     return _list
 
 

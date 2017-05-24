@@ -6,8 +6,8 @@ def test_change_single_to_double_quotes():
 
 
 def test_flatten_list():
-    _list = [1, 2, 3, [3, 4], [1, 2], 0, 9]
-    assert util.flatten_list(_list) == [1, 2, 3, 3, 4, 1, 2, 0, 9]
+    _list = [1, 2, 3, [3, 4], [1, [2, [1, 0]]], 9]
+    assert util.flatten_list(_list) == [1, 2, 3, 3, 4, 1, 2, 1, 0, 9]
 
 
 def test_parse_p(html):
@@ -21,7 +21,7 @@ def test_parse_img(html):
     parse = util.parse_img(html.find('img'))
     assert "type" and "content" in parse
     assert parse['type'] == "image"
-    assert parse['content'] == "http://s2.glbimg.com/fiat-argo.jpg"
+    assert parse['content'] == "http://s2.glbimg.com/fiat.jpg"
 
 
 def test_parse_ul(html):
