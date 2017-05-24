@@ -12,6 +12,12 @@ def flatten_list(list_with_list):
     return _list
 
 
+def parse_tag(html):
+    return flatten_list([TAGS.get(children.name)(children)
+                         for children in html.children
+                         if children.name in TAGS])
+
+
 def parse_p(p):
     text = p.text.strip()
     if text:
@@ -32,10 +38,7 @@ def parse_ul(ul):
 
 
 def parse_div(div):
-    result = [TAGS.get(children.name)(children)
-              for children in div.children
-              if children.name in TAGS]
-    return result
+    return parse_tag(div)
 
 
 TAGS = dict(p=parse_p,

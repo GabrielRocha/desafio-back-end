@@ -21,25 +21,9 @@ def item(feed):
 
 
 @pytest.fixture
-def tag_p():
-    return BeautifulSoup("<p>\nTexto de exemplo\n\t\n</p>",
-                         "html.parser")
-
-
-@pytest.fixture
-def tag_img():
-    html = "<p><img id='221890' src='http://s2.glbimg.com/fiat-argo.jpg'/></p>"
-    return BeautifulSoup(html, "html.parser").find('img')
-
-
-@pytest.fixture
-def tag_ul():
-    html = "<ul><li><a href='http://null'>1</a></li><li></li></ul>"
-    return BeautifulSoup(html, "html.parser")
-
-
-@pytest.fixture
-def tag_div():
-    html = "<div><ul><li><a href='http://null'>1</a></li></ul>" \
-           "<img id='221890' src='http://s2.glbimg.com/fiat-argo.jpg'/></div>"
-    return BeautifulSoup(html, "html.parser").find('div')
+def html():
+    _html = "<p>\nTexto de exemplo\n\t\n</p>" \
+           "<div><ul><li><a href='http://null'>1</a></li></ul>" \
+           "<img id='221890' src='http://s2.glbimg.com/fiat-argo.jpg'/>" \
+           "</div>"
+    return BeautifulSoup(_html, "html.parser")
