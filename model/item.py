@@ -1,4 +1,5 @@
 from .description import Description
+from util import change_single_to_double_quotes
 
 
 class Item:
@@ -8,9 +9,8 @@ class Item:
         self.description = Description(tag.find('description'))
 
     def parse(self):
-        return dict(title=self.title,
-                    link=self.link,
-                    description=self.description)
+        result = dict(title=self.title, link=self.link, description=self.description)
+        return change_single_to_double_quotes('"item": {}'.format(result))
 
     def __repr__(self):
         return self.title

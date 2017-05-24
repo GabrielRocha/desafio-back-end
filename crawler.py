@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from model.item import Item
-from helper import change_single_to_double_quotes
+
 
 class CrawlerFeed():
     def __init__(self, url):
@@ -14,8 +14,7 @@ class CrawlerFeed():
         return [Item(tag) for tag in self.root.findAll('item')]
 
     def parse_items(self):
-        return [change_single_to_double_quotes('"item": {}'.format(item.parse()))
-                for item in self.items]
+        return [item.parse() for item in self.items]
 
     def __repr__(self):
         return self.url
