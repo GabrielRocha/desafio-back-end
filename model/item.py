@@ -1,5 +1,5 @@
 from .description import Description
-from util import convert_to_double_quotes
+import json
 
 
 class Item:
@@ -10,8 +10,8 @@ class Item:
 
     def parse(self):
         result = dict(title=self.title, link=self.link,
-                      description=self.description)
-        return convert_to_double_quotes('"item": {}'.format(result))
+                      description=self.description.parse())
+        return dict(item=result)
 
     def __repr__(self):
         return self.title
