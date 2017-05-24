@@ -1,4 +1,4 @@
-import pytest
+import json
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -13,14 +13,17 @@ def test_feed_is_xml(feed):
 
 
 def test_total_items(feed):
-    assert len(feed.items) == 12
+    assert len(feed.items) == 2
 
 
 def test_feed_repr(feed):
-    assert feed.__repr__() == "file:///{}/xmls/feed.xml".format(BASE_DIR)
+    assert feed.__repr__() == "file:///{}/xml/feed.xml".format(BASE_DIR)
 
 
-@pytest.mark.skip(reason="Tem que definir o objeto description")
-@pytest.mark.parametrize("item", open(BASE_DIR+"/items", "r").readlines())
-def test_parse_items(feed, item):
-    assert item.strip() in feed.parse_items()
+def test_valid_json(feed):
+    assert json.loads(feed.parse())
+
+
+def test_parse(feed):
+    json_base = json.loads(open(BASE_DIR+"/json").read())
+    assert json_base == json.loads(feed.parse())

@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from model.item import Item
+import json
 
 
 class CrawlerFeed():
@@ -13,8 +14,8 @@ class CrawlerFeed():
     def items(self):
         return [Item(tag) for tag in self.root.findAll('item')]
 
-    def parse_items(self):
-        return [item.parse() for item in self.items]
+    def parse(self):
+        return json.dumps(dict(feed=[item.parse() for item in self.items]))
 
     def __repr__(self):
         return self.url
