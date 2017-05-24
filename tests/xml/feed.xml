@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title><![CDATA[Auto Esporte]]></title>
+  <link>http://revistaautoesporte.globo.com/</link>
+  <description></description>
+  <language>pt-BR</language>
+  <copyright>© Todos os direitos reservados.</copyright>
+  <image>
+    <url>http://e.glbimg.com/og/ed/edg2/static_files/rss/img/auto-esporte.png</url>
+    <title><![CDATA[Auto Esporte]]></title>
+    <link>http://revistaautoesporte.globo.com/</link>
+  </image>
+  
+  <item>
+    <title><![CDATA[TITLE]]></title>
+    <description><![CDATA[<div class="foto componente_materia midia-largura-620">
+	<img alt="alt" height="413" id="221890" src="SRC_IMAGE.jpg" title="title Argo" width="620" />
+	<label class="foto-legenda">LABEL</label></div>
+<p>
+	TEXTO P <a href="LINK">A </a><strong>STRONG</strong></p>
+<div class="saibamais componente_materia expandido">
+	<strong>saiba mais</strong>
+	<ul>
+		<li>
+			<a href="LINK_LI_1">LINK</a></li>
+		<li>
+			<a href="LINK_LI_2">LINK</a></li>
+		<li>
+			<a href="LINK_LI_3">LINK</a></li>
+	</ul>
+</div>
+<p>
+	<strong>STRONG <a href="HREF">A</a> TEXTO</strong><a href="HREF"> A</a></p>
+<p>
+	TEXTO P <a href="HREF">A</a> TEXTO <a href="HREF">A </a><strong>STRONG</strong></p>
+<div class="youtube componente_materia">
+	<blockquote class="instagram-media">
+		<div style="padding:8px;">
+			<div>
+				<div>
+					&nbsp;</div>
+			</div>
+			<p>
+				<a href="HREF"> A</a></p>
+			<p>
+				TEXTO P</p>
+		</div>
+	</blockquote>
+</div>
+<p>
+	&nbsp;</p>
+]]></description>
+    <link>LINK_FEED.html</link>
+    <dc:creator>Redação</dc:creator>
+    <guid>1347076</guid>
+  </item>
+
+  <item>
+    <title><![CDATA[TITLE]]></title>
+    <description><![CDATA[<div class="foto componente_materia midia-largura-620">
+	<img alt="alt" height="413" id="221890" src="SRC_IMAGE.jpg" title="title Argo" width="620" />
+	<label class="foto-legenda">LABEL</label></div>
+<p>
+	TEXTO P <a href="LINK">A </a><strong>STRONG</strong></p>
+<div class="saibamais componente_materia expandido">
+	<strong>saiba mais</strong>
+	<ul>
+		<li>
+			<a href="LINK_LI_1">LINK</a></li>
+		<li>
+			<a href="LINK_LI_2">LINK</a></li>
+		<li>
+			<a href="LINK_LI_3">LINK</a></li>
+	</ul>
+</div>
+<p>
+	<strong>STRONG <a href="HREF">A</a> TEXTO</strong><a href="HREF"> A</a></p>
+<p>
+	TEXTO P <a href="HREF">A</a> TEXTO <a href="HREF">A </a><strong>STRONG</strong></p>
+<div class="youtube componente_materia">
+	<blockquote class="instagram-media">
+		<div style="padding:8px;">
+			<div>
+				<div>
+					&nbsp;</div>
+			</div>
+			<p>
+				<a href="HREF"> A</a></p>
+			<p>
+				TEXTO P</p>
+		</div>
+	</blockquote>
+</div>
+<p>
+	&nbsp;</p>
+]]></description>
+    <link>LINK_FEED.html</link>
+    <dc:creator>Redação</dc:creator>
+    <guid>1347076</guid>
+  </item>
+</channel>
+</rss>
