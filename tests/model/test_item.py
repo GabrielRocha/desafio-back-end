@@ -14,5 +14,6 @@ def test_item_link(item):
 def test_item_description(item):
     assert isinstance(item.description, Description)
 
+
 def test_item_repr(item):
     assert item.__repr__() == "Fiat Argo é flagrado completamente sem camuflagem"

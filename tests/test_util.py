@@ -2,7 +2,7 @@ import util
 
 
 def test_change_single_to_double_quotes():
-    assert util.change_single_to_double_quotes("'a','p'") == '"a","p"'
+    assert util.convert_to_double_quotes("'a','p'") == '"a","p"'
 
 
 def test_flatten_list():
