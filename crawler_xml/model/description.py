@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
-from util import parse_tag
+
+from crawler_xml.util import parse_tag
 
 
 class Description:

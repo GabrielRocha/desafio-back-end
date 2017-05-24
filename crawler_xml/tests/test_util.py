@@ -1,4 +1,4 @@
-import util
+from crawler_xml import util
 
 
 def test_flatten_list():

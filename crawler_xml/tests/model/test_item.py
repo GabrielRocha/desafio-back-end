@@ -1,6 +1,7 @@
-from model.description import Description
 import ast
 import os
+
+from crawler_xml.model.description import Description
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
