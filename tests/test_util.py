@@ -1,10 +1,6 @@
 import util
 
 
-def test_change_single_to_double_quotes():
-    assert util.convert_to_double_quotes("'a','p'") == '"a","p"'
-
-
 def test_flatten_list():
     _list = [1, 2, 3, [3, 4], [1, [2, [1, 0]]], 9]
     assert util.flatten_list(_list) == [1, 2, 3, 3, 4, 1, 2, 1, 0, 9]

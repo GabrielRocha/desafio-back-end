@@ -1,7 +1,3 @@
-def convert_to_double_quotes(string):
-    return string.replace("'", '"')
-
-
 def flatten_list(list_with_list):
     _list = []
     for element in list_with_list:
