@@ -1,5 +1,4 @@
 from .description import Description
-import json
 
 
 class Item:

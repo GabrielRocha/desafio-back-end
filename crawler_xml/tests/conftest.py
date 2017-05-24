@@ -1,7 +1,7 @@
+from crawler_xml.crawler import CrawlerFeed
+from bs4 import BeautifulSoup
 import os
 import pytest
-from bs4 import BeautifulSoup
-from crawler_xml.crawler import CrawlerFeed
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 

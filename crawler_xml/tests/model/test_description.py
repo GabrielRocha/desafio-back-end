@@ -17,8 +17,9 @@ def test_text_html(description):
 
 def test_parse(description):
     result = [{"type": "image", "content": "SRC_IMAGE.jpg"},
-             {"type": "text", "content": "TEXTO P A STRONG"},
-             {"type": "links", "content": ["LINK_LI_1", "LINK_LI_2", "LINK_LI_3"]},
-             {"type": "text", "content": "STRONG A TEXTO A"},
-             {"type": "text", "content": "TEXTO P A TEXTO A STRONG"}]
+              {"type": "text", "content": "TEXTO P A STRONG"},
+              {"type": "links", "content": ["LINK_LI_1", "LINK_LI_2",
+                                            "LINK_LI_3"]},
+              {"type": "text", "content": "STRONG A TEXTO A"},
+              {"type": "text", "content": "TEXTO P A TEXTO A STRONG"}]
     assert description.parse() == result
