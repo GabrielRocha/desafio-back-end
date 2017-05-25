@@ -1,7 +1,7 @@
 from peewee import SqliteDatabase
-import settings
-import pytest
+from conf import settings
 import re
+import pytest
 
 
 @pytest.mark.parametrize("key", ["URL_FEED",
