@@ -5,13 +5,13 @@ import re
 
 
 @pytest.mark.parametrize("key", ["URL_FEED",
-                                  "CONNECTION"])
+                                 "CONNECTION"])
 def test_key_settings(key):
     assert key in settings.__dict__
 
 
 @pytest.mark.parametrize("key", ["URL_FEED",
-                                  "CONNECTION"])
+                                 "CONNECTION"])
 def test_is_not_none_key(key):
     assert getattr(settings, key)
 
