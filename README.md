@@ -195,7 +195,7 @@ $ docker build . -t desafio
 
 ### Execução do ambiente
 ```shell
-$ docker run -ti -p 5000:5000 --name desafio desafio bash
+$ docker run -ti -p 5000:5000 -v $(pwd):/home/desafio-back-end --name desafio desafio bash
 ```
 
 ### Testes
