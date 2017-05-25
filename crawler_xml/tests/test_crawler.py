@@ -25,5 +25,6 @@ def test_valid_json(feed):
 
 
 def test_parse(feed):
-    json_base = json.loads(open(BASE_DIR+"/json").read())
+    with open(BASE_DIR+"/json") as json_file:
+        json_base = json.loads(json_file.read())
     assert json_base == json.loads(feed.parse())

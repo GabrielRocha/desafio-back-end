@@ -4,6 +4,7 @@ import pytest
 
 @pytest.fixture
 def description(item):
+    """ Description node of xml """
     return item.description
 
 

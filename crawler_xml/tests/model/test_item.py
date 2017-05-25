@@ -20,7 +20,8 @@ def test_item_description(item):
 
 
 def test_parse(item):
-    json_item = open(BASE_DIR+"/item", "r").read()
+    with open(BASE_DIR+"/item", "r") as json_file:
+        json_item = json_file.read()
     assert item.parse() == ast.literal_eval(json_item)
 
 

@@ -6,6 +6,7 @@ import re
 
 @pytest.fixture
 def user():
+    """ User model """
     return User()
 
 
