@@ -195,7 +195,7 @@ $ docker build . -t desafio
 
 ### Execução do ambiente
 ```shell
-$ docker run -ti -v $(pwd):/home -p 5000:5000 --name desafio desafio bash
+$ docker run -ti -p 5000:5000 --name desafio desafio bash
 ```
 
 ### Testes
@@ -211,9 +211,15 @@ $ flake8 --max-complexity=5 .
 ### Webservice
 
 #### Executar WebService
+**Via Terminal**
 ```shell
 $ gunicorn app:app -b 0.0.0.0:5000
 ```
+**Docker Daemon**
+```shell
+$ docker run -d -p 5000:5000 --name desafio desafio
+```
+
 
 #### Criar Usuário
 ```shell
