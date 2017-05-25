@@ -195,15 +195,32 @@ $ docker build . -t desafio
 
 ### Execução do ambiente
 ```shell
-$ docker run -ti -v $(pwd):/home --name desafio desafio bash
+$ docker run -ti -v $(pwd):/home -p 5000:5000 --name desafio desafio bash
 ```
 
 ### Testes
 ```shell
-$ pytest --cov -W ignore .
+$ pytest --cov-report term-missing --cov . -W ignore
 ```
 
 ### Estilo de Código
 ```shell
 $ flake8 --max-complexity=5 .
+```
+
+### Webservice
+
+#### Executar WebService
+```shell
+$ gunicorn app:app -b 0.0.0.0:5000
+```
+
+#### Criar Usuário
+```shell
+$ curl -i -X POST -H "Content-Type: application/json" -d '{"username":"desafio","password":"python"}' http://localhost:5000/api/users
+```
+
+#### Json do Feed
+```shell
+$ curl -u desafio:python -i -X GET http://localhost:5000/api/feed
 ```

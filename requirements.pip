@@ -1,9 +1,11 @@
-lxml
 pytest
-bs4
 pytest-cov
-flake8
+lxml
+bs4
 flask
+pytest-flask
 Flask-HTTPAuth
 peewee
 passlib
+flake8
+gunicorn
