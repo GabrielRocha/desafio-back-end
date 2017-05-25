@@ -3,3 +3,7 @@ pytest
 bs4
 pytest-cov
 flake8
+flask
+Flask-HTTPAuth
+peewee
+passlib
